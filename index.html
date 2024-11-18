@@ -1,0 +1,20 @@
+---
+layout: home  # 이 페이지에서 사용할 레이아웃 설정 (home 레이아웃 사용)
+title: "Minji's Data Journal"  # 페이지 제목 설정
+---
+
+<div class="container">
+    <section class="post-list">
+        <h2>All Posts</h2> <!-- 전체 글 목록 섹션 제목 -->
+        <ul>
+            {% for post in site.posts %} <!-- 블로그 포스트를 반복문으로 출력 -->
+                <li>
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> 
+                    <!-- 각 포스트의 제목과 링크를 출력 -->
+                    - {{ post.date | date: "%Y-%m-%d" }} 
+                    <!-- 포스트 작성 날짜를 YYYY-MM-DD 형식으로 출력 -->
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+</div>

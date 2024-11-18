@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- HTML 언어 설정: 한국어 -->
+<head>
+    <meta charset="UTF-8"> <!-- 문서의 문자 인코딩 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 반응형 웹을 위한 뷰포트 설정 -->
+    <title>{{ page.title }} | Minji's Data Journal</title> 
+    <!-- 현재 페이지 제목과 블로그 이름을 결합하여 페이지 제목 설정 -->
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+    <!-- CSS 파일 연결 (_config.yml의 baseurl을 사용하여 상대 경로 처리) -->
+    <!-- Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet">
+    
+    <!-- Prism.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    
+    <!-- 언어별 지원 추가 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+<body>
+
+<header>
+    <!-- 헤더 섹션 -->
+    <h1><a href="{{ site.baseurl }}">Minji's Data Journal</a></h1>
+    <!-- 블로그 제목을 홈 링크와 함께 표시 -->
+    <p>{{ site.description }}</p>
+    <!-- 블로그 설명 출력 (_config.yml에서 정의한 description) -->
+</header>
+
+<!-- 사이드바 버튼 -->
+<button id="sidebar-toggle" class="sidebar-button">☰</button>
+
+<!-- 사이드바 -->
+<aside id="sidebar" class="sidebar">
+    <button id="close-sidebar" class="close-button">×</button>
+    <ul>
+        <li><a href="{{ site.baseurl }}/category/SQL/">SQL</a></li> <!-- 'SQL' 카테고리 링크 -->
+        <li><a href="{{ site.baseurl }}/category/Python/">Python</a></li> <!-- 'Python' 카테고리 링크 -->
+        <li><a href="{{ site.baseurl }}/category/bootcamp/">부트캠프</a></li> <!-- '데이터분석 부트캠프' 카테고리 링크 -->
+    </ul>
+</aside>
+    
+<main>
+    {{ content }} 
+    <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
+</main>
+
+<footer>
+    <!-- 푸터 섹션 -->
+    <p>&copy; {{ site.author.name }} | Contact: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
+    <!-- 저작권 정보와 작성자의 이메일 표시 -->
+</footer>
+
+<!-- JavaScript 파일 연결 -->
+<script src="{{ "/assets/js/script.js" | prepend: site.baseurl }}" defer></script>
+
+</body>
+</html>
