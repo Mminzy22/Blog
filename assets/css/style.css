@@ -265,6 +265,11 @@ th {
     font-weight: bold;
 }
 
+/* 코드블럭 스타일 */
+pre code.hljs {
+    margin: 10px;
+}
+
 /* 링크 스타일 */
 a {
     color: #333;
