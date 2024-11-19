@@ -268,15 +268,11 @@ th {
 /* 코드 블록 스타일 */
 pre {
     background: #f5f5f5 !important;
-    border-radius: 3px;
-    padding: .8em;
-    font-size: 0.9em;
-    overflow-x: auto;
+    font-size: 0.9em !important;
 }
 
 code, pre {
-    color: #333;
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
 }
 
 /* 링크 스타일 */
