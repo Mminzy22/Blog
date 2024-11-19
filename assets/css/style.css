@@ -248,7 +248,7 @@ ul li {
 table {
     border-collapse: collapse;
     background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #f1f1f1;
     border-radius: 8px;
     font-size: 14px;
 }
@@ -256,11 +256,11 @@ table {
 th, td {
     padding: 10px;
     text-align: left;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #f1f1f1;
 }
 
 th {
-    background-color: #333;
+    background-color: #8a8a8a;
     color: white;
     font-weight: bold;
 }
@@ -272,7 +272,7 @@ pre {
 }
 
 code, pre {
-    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
+    font-family: "Noto Sans KR", Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
 }
 
 /* 링크 스타일 */
