@@ -6,14 +6,15 @@
     <title>{{ page.title }} | MINJI BLOG</title> 
     <!-- 현재 페이지 제목과 블로그 이름을 결합하여 페이지 제목 설정 -->
 
-    <!-- Highlight.js CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.css" rel="stylesheet">
-
-    <!-- Highlight.js JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-
-    <!-- 하이라이트 활성화 -->
-    <script>hljs.highlightAll();</script>
+    <!-- Prism.js CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-coy.css" rel="stylesheet">
+    
+    <!-- Prism.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    
+    <!-- 언어별 지원 추가 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-sql.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
 
     
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
