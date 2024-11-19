@@ -189,6 +189,12 @@ body.sidebar-open {
     }
 }
 
+/* 포스트 내의 포스트제목 밑 줄 */
+.post-divider {
+    border: 0;
+    border-top: 2px solid #ddd; /* 두께와 색상 */
+    margin: 1rem 0; /* 위아래 여백 */
+}
 
 /* 페이지 컨테이너 */
 .container {
