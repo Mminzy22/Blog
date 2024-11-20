@@ -251,7 +251,7 @@ table {
     border: 1px solid #f1f1f1;
     border-radius: 8px;
     font-size: 14px;
-    margin: 10px;
+    margin: 15px;
 }
 
 th, td {
@@ -268,7 +268,7 @@ th {
 
 /* 코드블럭 스타일 */
 pre code.hljs {
-    margin: 10px;
+    margin: 15px;
 }
 
 /* 링크 스타일 */
