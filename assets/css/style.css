@@ -251,6 +251,7 @@ table {
     border: 1px solid #f1f1f1;
     border-radius: 8px;
     font-size: 14px;
+    margin: 10px;
 }
 
 th, td {
