@@ -240,6 +240,16 @@ ul {
     font-size: 14px;
 }
 
+ol {
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+ol li {
+    margin: 10px;
+}
+
 ul li {
     margin: 10px;
 }
