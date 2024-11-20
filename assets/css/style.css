@@ -132,7 +132,7 @@ body.sidebar-open {
     max-width: 100%; /* 이미지가 부모 요소의 너비를 넘지 않도록 설정 */
     height: auto; /* 비율을 유지하면서 높이 자동 조정 */
     display: block; /* 이미지가 inline 요소로 간주되지 않도록 설정 */
-    margin: 0 auto; /* 중앙 정렬 */
+    margin: 10px;
     border-radius: 8px; /* 선택적으로 모서리를 둥글게 */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 선택적으로 그림자 추가 */
 }
