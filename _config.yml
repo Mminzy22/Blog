@@ -9,6 +9,9 @@ author:
   name: "Minji Park"  # 작성자의 이름
   email: "aw7022@gmail.com"  # 작성자의 이메일 주소
 
+# 깃허브 테마 설정
+theme: "jekyll-theme-minimal"  # 사용할 테마 이름 (minimal 테마)
+
 # 플러그인 설정
 plugins:
   - jekyll-feed       # RSS 피드를 생성하는 플러그인
@@ -27,10 +30,6 @@ jekyll-archives:
 
 # 페이지네이션 설정
 paginate: 5  # 한 페이지에 표시할 포스트 수 (최대 5개)
-
-# 코드 하이라이터 설정
-highlighter: rouge  # 코드 블록에 색상 하이라이트를 적용하는 도구 설정
-markdown: kramdown
 
 # CSS 추가 설정
 sass:
