@@ -11,6 +11,7 @@ html, body {
     color: #333;
     line-height: 1.6;
     height: 100%;
+    overflow-x: hidden; /* 가로 스크롤 방지 */
 }
 
 /* 헤더 스타일 */
@@ -43,18 +44,48 @@ header a:hover {
     text-decoration: underline;
 }
 
-/* 카테고리 사이드바 */
+/* 사이드바 버튼 */
+.sidebar-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+.sidebar-button.hidden {
+    display: none; /* 버튼 숨기기 */
+}
+
+.sidebar-button:hover {
+    background: #555;
+}
+
+/* 사이드바 */
 .sidebar {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 220px;
+    left: -300px; /* 초기 숨김 상태 */
+    width: 300px;
     height: 100%;
     background: #3a3a3a;
     color: white;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.sidebar.open {
+    left: 0; /* 열릴 때 위치 */
 }
 
 .sidebar h2 {
@@ -83,16 +114,33 @@ header a:hover {
     text-decoration: underline;
 }
 
-/* 메인 컨텐츠 영역 */
-.container {
-    margin-left: 240px; /* 사이드바 너비 + 여백 */
+/* 사이드바 닫기 버튼 */
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* 메인 콘텐츠 영역 */
+main {
+    margin-left: 20px;
     padding: 20px;
+}
+
+.post-content {
     max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     border: 1px solid #ddd;
-    margin-top: 20px;
 }
 
 /* 섹션 제목 */
@@ -116,7 +164,7 @@ ul, ol {
 }
 
 ul {
-    list-style-type: disc; /* 점 스타일 */
+    list-style-type: disc;
 }
 
 ul li {
@@ -124,26 +172,23 @@ ul li {
 }
 
 ol {
-    list-style-type: decimal; /* 숫자 스타일 */
+    list-style-type: decimal;
 }
 
 ol li {
     margin: 10px 0;
-    counter-increment: list-counter; /* 항목 번호 증가 */
-}
-
-ol li::marker {
-    font-weight: bold; /* 숫자 강조 */
-    color: #555; /* 색상 변경 */
 }
 
 /* 반응형 스타일 */
 @media (max-width: 768px) {
     .sidebar {
-        width: 180px;
+        width: 250px;
     }
-    .container {
-        margin-left: 200px;
+    .sidebar.open {
+        left: 0;
+    }
+    .post-content {
+        margin: 20px auto;
         padding: 15px;
     }
 }
@@ -151,13 +196,13 @@ ol li::marker {
 @media (max-width: 480px) {
     .sidebar {
         width: 100%;
-        height: auto;
-        position: relative;
-        box-shadow: none;
+        height: 100%;
     }
-    .container {
-        margin-left: 0;
-        margin-top: 20px;
+    .sidebar.open {
+        left: 0;
+    }
+    .post-content {
+        margin: 10px auto;
         padding: 10px;
     }
 }
