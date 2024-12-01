@@ -28,23 +28,6 @@
     <!-- 블로그 설명 출력 (_config.yml에서 정의한 description) -->
 </header>
 
-<!-- 사이드바 버튼 -->
-<!-- <button id="sidebar-toggle" class="sidebar-button">☰</button> -->
-
-<!-- 사이드바 -->
-<aside id="sidebar" class="sidebar">
-    <!-- <button id="close-sidebar" class="close-button">×</button> -->
-    <ul>
-        {% for category in site.categories %}
-        <li>
-            <a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}/">
-                {{ category[0] | capitalize }}
-            </a>
-        </li>
-        {% endfor %}
-    </ul>
-</aside>
-    
 <main>
     {{ content }} 
     <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
