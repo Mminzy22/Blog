@@ -10,10 +10,8 @@
 
     <!-- Highlight.js CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css" rel="stylesheet">
-
     <!-- Highlight.js JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-
     <!-- 하이라이트 활성화 -->
     <script>hljs.highlightAll();</script>
 
@@ -31,15 +29,19 @@
 </header>
 
 <!-- 사이드바 버튼 -->
-<button id="sidebar-toggle" class="sidebar-button">☰</button>
+<!-- <button id="sidebar-toggle" class="sidebar-button">☰</button> -->
 
 <!-- 사이드바 -->
 <aside id="sidebar" class="sidebar">
-    <button id="close-sidebar" class="close-button">×</button>
+    <!-- <button id="close-sidebar" class="close-button">×</button> -->
     <ul>
-        <li><a href="{{ site.baseurl }}/category/SQL/">SQL</a></li> <!-- 'SQL' 카테고리 링크 -->
-        <li><a href="{{ site.baseurl }}/category/Python/">Python</a></li> <!-- 'Python' 카테고리 링크 -->
-        <li><a href="{{ site.baseurl }}/category/bootcamp/">부트캠프</a></li> <!-- '데이터분석 부트캠프' 카테고리 링크 -->
+        {% for category in site.categories %}
+        <li>
+            <a href="{{ site.baseurl }}/category/{{ category[0] | slugify }}/">
+                {{ category[0] | capitalize }}
+            </a>
+        </li>
+        {% endfor %}
     </ul>
 </aside>
     
@@ -55,7 +57,7 @@
 </footer>
 
 <!-- JavaScript 파일 연결 -->
-<script src="{{ "/assets/js/script.js" | prepend: site.baseurl }}" defer></script>
+<!-- <script src="{{ "/assets/js/script.js" | prepend: site.baseurl }}" defer></script> -->
 
 </body>
 </html>
