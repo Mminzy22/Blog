@@ -185,6 +185,14 @@ code, pre{
     margin: 10px 0;
 }
 
+/* hr 스타일 */
+.post-content hr {
+    border: 0; /* 기본 테두리 제거 */
+    height: 1px; /* 선의 두께 */
+    background-color: #e0e0e0; /* 선의 색상 */
+    margin: 2rem 0; /* 상하 여백 */
+}
+
 /* 표 스타일 */
 .post-content table {
     width: 100%; /* 표가 콘텐츠 영역을 가득 채움 */
