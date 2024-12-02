@@ -17,7 +17,6 @@ body {
 
 /* 헤더 스타일 */
 header {
-    background-color: #f8f9fa; /* 헤더 배경: 옅은 회색 */
     padding: 1rem 2rem; /* 상하 1rem, 좌우 2rem 패딩 */
     border-bottom: 1px solid #e0e0e0; /* 얇은 하단 테두리 */
     text-align: center;
@@ -54,6 +53,7 @@ header p {
 
 /* 포스트 리스트 스타일 */
 .post-list ul {
+    position: fixed; /* 화면에 고정 */
     list-style-type: none; /* 불릿 제거 */
     margin: 0;
     padding: 0;
@@ -101,7 +101,6 @@ header p {
 
 /* 푸터 스타일 */
 footer {
-    background-color: #f8f9fa; /* 푸터 배경: 옅은 회색 */
     text-align: center; /* 텍스트 가운데 정렬 */
     padding: 1rem 0;
     border-top: 1px solid #e0e0e0; /* 얇은 상단 테두리 */
