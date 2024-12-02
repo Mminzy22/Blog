@@ -147,7 +147,11 @@ code, pre{
 
 .post-content h2 {
     color: #333;
-    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.post-content h4 {
+    color: #333;
     margin-bottom: 15px;
 }
 
@@ -231,7 +235,6 @@ footer a:hover {
 
 /* 게시물 제목 스타일 */
 .post-title {
-    font-size: 1.75rem; /* 제목 크기 */
     color: #333333; /* 제목 색상 */
     margin-bottom: 1rem; /* 제목과 내용 사이 간격 */
 }
