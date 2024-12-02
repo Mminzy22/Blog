@@ -59,7 +59,7 @@ header p {
 }
 
 .post-list li {
-    margin-bottom: 1rem; /* 포스트 간 간격 */
+    margin-bottom: 0.5rem; /* 포스트 간 간격 */
 }
 
 .post-list a {
@@ -77,6 +77,10 @@ header p {
     width: 20%; /* 사이드바의 너비 */
     border-right: 1px solid #e0e0e0; /* 오른쪽 경계선 */
     padding: 2rem; /* 콘텐츠 내부 여백 */
+}
+
+.sidebar-title, .category-title {
+    margin-bottom: 1rem;
 }
 
 .sidebar ul {
