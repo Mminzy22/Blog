@@ -155,7 +155,8 @@ header p {
 }
 
 /* 목록 스타일 */
-.post-content ul, ol {
+.post-content ul, 
+.post-content ol {
     padding-left: 20px;
     margin-bottom: 15px;
     font-size: 14px;
