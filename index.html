@@ -7,26 +7,24 @@ title: "MINJI BLOG"  # 페이지 제목 설정
     <section class="post-list">
         <h2 class="list-title">전체 글 목록</h2> <!-- 전체 글 목록 섹션 제목 -->
         <ul>
-            {% for post in site.posts %} <!-- 블로그 포스트를 반복문으로 출력 -->
-                <li>
-                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> 
-                    <!-- 각 포스트의 제목과 링크를 출력 -->
-                    - {{ post.date | date: "%Y-%m-%d" }} 
-                    <!-- 포스트 작성 날짜를 YYYY-MM-DD 형식으로 출력 -->
-                </li>
+            {% for post in paginator.posts %}
+            <li>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                - {{ post.date | date: "%Y-%m-%d" }}
+            </li>
             {% endfor %}
         </ul>
-
+        
         <!-- 페이지 네비게이션 -->
         <div class="pagination">
             {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path }}">이전</a>
-                    {% endif %}
-
-                    Page {{ paginator.page }} of {{ paginator.total_pages }}
-
-                    {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}">다음</a>
+            <a href="{{ paginator.previous_page_path }}">이전</a>
+            {% endif %}
+        
+            Page {{ paginator.page }} of {{ paginator.total_pages }}
+        
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}">다음</a>
             {% endif %}
         </div>
     </section>
