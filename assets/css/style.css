@@ -79,7 +79,7 @@ header p {
     padding: 2rem; /* 콘텐츠 내부 여백 */
 }
 
-.sidebar-title, .category-title {
+.sidebar-title, .category-title, .list-title {
     margin-bottom: 1rem;
 }
 
