@@ -39,7 +39,7 @@
         <ul>
             {% for category in site.categories %}
             <li>
-                <a href="{{ site.baseurl }}/category/{{ category[0] | slugify: 'raw' }}/">
+                <a href="{{ site.baseurl }}/category/{{ category[0] | slugify: }}/">
                     {{ category[0] | capitalize }}
                 </a>
             </li>
