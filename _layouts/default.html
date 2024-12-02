@@ -31,10 +31,9 @@
 <!-- 사이드바 버튼 -->
 <!-- <button id="sidebar-toggle" class="sidebar-button">☰</button> -->
 
-
-<main>
+<div class="layout-container">
     <!-- 사이드바 -->
-    <aside id="sidebar" class="sidebar">
+    <aside class="sidebar">
         <!-- <button id="close-sidebar" class="close-button">×</button> -->
         <ul>
             {% for category in site.categories %}
@@ -46,9 +45,11 @@
             {% endfor %}
         </ul>
     </aside>
-    {{ content }} 
-    <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
-</main>
+    <main class="main-content">
+        {{ content }} 
+        <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
+    </main>
+</div>
 
 <footer>
     <!-- 푸터 섹션 -->

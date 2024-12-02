@@ -38,11 +38,17 @@ header p {
     color: #666666; /* 텍스트 색상: 연한 회색 */
 }
 
+/* 사이드바 & 메인 영역*/
+.layout-container {
+    display: flex; /* 플렉스박스를 사용해 가로로 배치 */
+    flex-direction: row; /* 기본값으로, 요소를 가로로 배치 */
+    height: 100vh; /* 전체 화면 높이 */
+}
+
 /* 메인 콘텐츠 영역 */
-main {
-    padding: 2rem; /* 콘텐츠의 안쪽 여백 */
-    max-width: 800px; /* 콘텐츠 최대 너비 */
-    margin-left: 250px; /* 사이드바 너비만큼 여백 추가 */
+.main-content {
+    flex-grow: 1; /* 남은 공간을 차지하도록 설정 */
+    padding: 2rem; /* 콘텐츠 내부 여백 */
 }
 
 /* 포스트 리스트 스타일 */
@@ -67,18 +73,10 @@ main {
 }
 
 /* 사이드바 스타일 */
-aside {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 250px; /* 너비 설정 */
-    height: 100%; /* 전체 높이 */
-}
-
 .sidebar {
-    background-color: #f8f9fa; /* 옅은 회색 배경 */
-    padding: 1rem;
-    border-right: 1px solid #e0e0e0; /* 얇은 오른쪽 테두리 */
+    width: 250px; /* 사이드바의 고정 너비 */
+    background-color: #f8f9fa; /* 배경색 */
+    border-right: 1px solid #e0e0e0; /* 오른쪽 경계선 */
 }
 
 .sidebar ul {
