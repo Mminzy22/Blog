@@ -65,11 +65,30 @@ header p {
 .post-list a {
     text-decoration: none; /* 링크 밑줄 제거 */
     color: #007bff; /* 링크 색상: 파란색 */
-    font-weight: bold;
 }
 
 .post-list a:hover {
     text-decoration: underline; /* 링크에 마우스를 올렸을 때 밑줄 표시 */
+}
+
+/* 페이징 처리 */
+.pagination {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
 }
 
 /* 사이드바 스타일 */

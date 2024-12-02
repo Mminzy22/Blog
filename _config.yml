@@ -26,7 +26,8 @@ jekyll-archives:
     category: /category/:name/  # 카테고리 아카이브의 URL 구조 지정
 
 # 페이지네이션 설정
-paginate: 5  # 한 페이지에 표시할 포스트 수 (최대 5개)
+paginate: 5 # 한 페이지에 표시할 포스트 수
+paginate_path: "/page:num" # 페이징 경로 설정
 
 # CSS 추가 설정
 sass:
