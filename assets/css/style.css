@@ -67,7 +67,7 @@ main {
 }
 
 /* 사이드바 스타일 */
-.sidebar {
+aside {
     position: fixed;
     left: 0;
     top: 0;
