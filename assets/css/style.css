@@ -82,24 +82,34 @@ header p {
 
 .pagination a {
     display: inline-block;
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    color: #6d6d6d;
-    border-radius: 4px;
+    color: #007bff;
     font-size: 1rem;
+    position: relative; /* 회색 줄을 위한 상대 위치 */
+}
+
+.pagination a:hover {
+    color: #0056b3;
 }
 
 .pagination .current {
     display: inline-block;
-    color: #6d6d6d;
-    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: #333333; /* 선택된 페이지는 진한 회색 */
+    font-weight: bold;
+    position: relative; /* 회색 줄을 위한 상대 위치 */
 }
 
-.pagination .disabled {
-    display: inline-block;
-    color: #6d6d6d;
-    font-size: 1rem;
-    cursor: not-allowed;
+.pagination .current::after {
+    content: ""; /* 빈 콘텐츠로 아래 줄 생성 */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* 텍스트와의 간격 */
+    height: 3px;
+    background-color: #333333; /* 회색 줄 색상 */
+    border-radius: 2px; /* 모서리를 살짝 둥글게 */
 }
 
 /* 사이드바 스타일 */
