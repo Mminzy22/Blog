@@ -17,14 +17,27 @@ title: "MINJI BLOG"  # 페이지 제목 설정
         
         <!-- 페이지 네비게이션 -->
         <div class="pagination">
+            <!-- 이전 페이지 -->
             {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">이전</a>
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&lt;</a>
+            {% else %}
+            <span class="disabled">&lt;</span>
             {% endif %}
-
-            Page {{ paginator.page }} of {{ paginator.total_pages }}
-
+        
+            <!-- 페이지 번호 -->
+            {% for page in (1..paginator.total_pages) %}
+                {% if page == paginator.page %}
+                <span class="current">{{ page }}</span>
+                {% else %}
+                <a href="{{ site.baseurl }}{% if page > 1 %}/page{{ page }}{% endif %}">{{ page }}</a>
+                {% endif %}
+            {% endfor %}
+        
+            <!-- 다음 페이지 -->
             {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">다음</a>
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">&gt;</a>
+            {% else %}
+            <span class="disabled">&gt;</span>
             {% endif %}
         </div>
     </section>
