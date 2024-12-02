@@ -141,7 +141,10 @@ header p {
 }
 
 /* 포스트 설정 */
-/* 포스트 설정 */
+code, pre{
+    margin-bottom: 15px;
+}
+
 .post-content h2 {
     color: #333;
     font-size: 1.8rem;
