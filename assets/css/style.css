@@ -42,6 +42,8 @@ header p {
 .layout-container {
     display: flex; /* 플렉스박스를 사용해 가로로 배치 */
     flex-direction: row; /* 기본값으로, 요소를 가로로 배치 */
+    width: 80%; /* 화면 가로의 80% 차지 */
+    margin: 0 auto; /* 화면 중앙에 배치 */
 }
 
 /* 메인 콘텐츠 영역 */
@@ -73,7 +75,7 @@ header p {
 
 /* 사이드바 스타일 */
 .sidebar {
-    width: 250px; /* 사이드바의 고정 너비 */
+    width: 20%; /* 사이드바의 너비 */
     background-color: #f8f9fa; /* 배경색 */
     border-right: 1px solid #e0e0e0; /* 오른쪽 경계선 */
     padding: 2rem; /* 콘텐츠 내부 여백 */
