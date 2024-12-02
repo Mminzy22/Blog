@@ -80,7 +80,6 @@ header p {
 }
 
 .sidebar ul {
-    border-top: 1px solid #e0e0e0; /* 얇은 상단 테두리 */
     list-style-type: none; /* 불릿 제거 */
     padding: 0;
 }
