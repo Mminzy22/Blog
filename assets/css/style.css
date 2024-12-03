@@ -46,7 +46,7 @@ header p {
 }
 
 /* 메인 콘텐츠 영역 */
-.main-content {
+.main-content, .post-content {
     flex-grow: 1; /* 남은 공간을 차지하도록 설정 */
     padding: 2rem; /* 콘텐츠 내부 여백 */
 }
