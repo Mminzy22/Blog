@@ -122,12 +122,6 @@ header p {
         padding: 0 1rem; /* 좌우 여백 */
     }
 
-    .main-content {
-        max-width: none; /* max-width 속성 제거 */
-        width: 100%; /* 전체 너비를 차지하도록 설정 */
-        padding: 1rem; /* 모바일에서 적절한 내부 여백 추가 */
-    }
-
     /* 사이드바 스타일 */
     .sidebar {
         width: 100%; /* 모바일에서 전체 너비 */
@@ -167,15 +161,9 @@ header p {
         padding: 0 1rem; /* 좌우 여백 */
     }
 
-    .main-content {
-        max-width: none; /* max-width 속성 제거 */
-        width: 100%; /* 전체 너비를 차지하도록 설정 */
-        padding: 1rem; /* 모바일에서 적절한 내부 여백 추가 */
-    }
-
     /* 사이드바 스타일 */
     .sidebar {
-        width: 100%; /* 모바일에서 전체 너비 */
+        width: 100% !important; /* 모바일에서 전체 너비 */
         border-right: none !important; /* border-right 제거 */
         border-bottom: 1px solid #e0e0e0; /* 아래쪽 경계선 추가 */
         padding: 2rem; /* 콘텐츠 내부 여백 */
@@ -206,7 +194,7 @@ header p {
 
 /* 사이드바 스타일 */
 .sidebar {
-    width: 20%; /* 사이드바의 너비 */
+    width: 20% !important; /* 사이드바의 너비 */
     min-width: 200px; /* 최소 너비 설정 */
     border-right: 1px solid #e0e0e0; /* 오른쪽 경계선 */
     padding: 2rem; /* 콘텐츠 내부 여백 */
