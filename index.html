@@ -29,7 +29,7 @@ title: "MINJI BLOG"  # 페이지 제목 설정
                 {% if page == paginator.page %}
                 <span class="current">{{ page }}</span>
                 {% else %}
-                <a href="{{ site.baseurl }}{% if page > 1 %}/page{{ page }}{% endif %}">{{ page }}</a>
+                <a href="{{ site.url }}{{ site.baseurl }}{% if page > 1 %}/page{{ page }}{% endif %}">{{ page }}</a>
                 {% endif %}
             {% endfor %}
         

@@ -6,7 +6,7 @@
 
 ## 🌟 블로그 소개
 
-- **URL**: [https://Mminzy22.github.io/Blog](https://Mminzy22.github.io/Blog)
+- **URL**: [https://Mminzy22.github.io](https://Mminzy22.github.io)
 - **주요 내용**:
   - 📚 개발 학습 기록 (프로그래밍 언어, 알고리즘, 데이터 분석 등).
   - 💻 프로젝트 결과물과 과정 공유.
@@ -66,7 +66,7 @@
 
 ## 🌍 블로그 URL
 
-- **GitHub Pages**: [https://Mminzy22.github.io/Blog](https://Mminzy22.github.io/Blog)
+- **GitHub Pages**: [https://Mminzy22.github.io](https://Mminzy22.github.io)
 
 ---
 
