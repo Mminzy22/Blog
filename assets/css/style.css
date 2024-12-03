@@ -116,10 +116,21 @@ header p {
 
 /* 태블릿 세로 화면 (768px ~ 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        width: 100%
+    }
+
     .layout-container {
         flex-direction: column; /* 세로 배치 */
         width: 100%; /* 모바일에서 전체 너비 */
         padding: 0 1rem; /* 좌우 여백 */
+    }
+
+    /* 메인 콘텐츠 영역 */
+    .main-content {
+        width: 100% !important; /* 모바일에서 전체 너비 */
+        flex-grow: 1; /* 남은 공간을 차지하도록 설정 */
+        padding: 2rem; /* 콘텐츠 내부 여백 */
     }
 
     /* 사이드바 스타일 */
@@ -155,10 +166,21 @@ header p {
 
 /* 모바일 화면 (최대 768px) */
 @media (max-width: 768px) {
+    body {
+        width: 100%
+    }
+
     .layout-container {
         flex-direction: column; /* 세로 배치 */
         width: 100%; /* 모바일에서 전체 너비 */
         padding: 0 1rem; /* 좌우 여백 */
+    }
+
+    /* 메인 콘텐츠 영역 */
+    .main-content {
+        width: 100% !important; /* 모바일에서 전체 너비 */
+        flex-grow: 1; /* 남은 공간을 차지하도록 설정 */
+        padding: 2rem; /* 콘텐츠 내부 여백 */
     }
 
     /* 사이드바 스타일 */
