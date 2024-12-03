@@ -46,7 +46,7 @@ header p {
 }
 
 /* 메인 콘텐츠 영역 */
-.main-content, .post-content {
+.main-content {
     flex-grow: 1; /* 남은 공간을 차지하도록 설정 */
     padding: 2rem; /* 콘텐츠 내부 여백 */
 }
@@ -224,7 +224,7 @@ code, pre{
 
 /* 이미지 기본 스타일 */
 img {
-    max-width: 100%; /* 이미지를 컨테이너 너비에 맞춤 */
+    max-width: 500px; /* 최대 너비를 500px로 제한 */
     height: auto;    /* 이미지의 비율을 유지 */
     display: block;  /* 블록 요소로 표시하여 하단 여백 제거 */
     margin: 0 auto;  /* 이미지를 중앙 정렬 */
@@ -233,7 +233,7 @@ img {
 /* 특정 이미지를 선택적으로 스타일링 */
 img[data-custom="example"] {
     max-width: 500px; /* 최대 너비를 500px로 제한 */
-    width: 100%;      /* 화면 크기에 따라 유연하게 크기 조정 */
+    width: 80%;      /* 화면 크기에 따라 유연하게 크기 조정 */
     border: 1px solid #ccc; /* 얇은 회색 테두리 추가 */
     border-radius: 5px;     /* 둥근 모서리 */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 살짝의 그림자 추가 */
