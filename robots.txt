@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://mminzy22.github.io/Blog/sitemap.xml
