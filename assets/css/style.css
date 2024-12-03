@@ -147,6 +147,8 @@ code, pre{
 
 pre{
     overflow-x: auto; /* 가로 스크롤 활성화 */
+    max-width: 100%; /* 부모 요소에 맞게 크기 제한 */
+    box-sizing: border-box; /* 패딩 포함 크기 계산 */
 }
 
 .post-content h2 {
