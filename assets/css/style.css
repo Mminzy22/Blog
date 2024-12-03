@@ -167,8 +167,6 @@ header p {
 .post-content .highlight pre {
     max-width: 100%; /* 부모 요소 크기에 맞춤 */
     overflow-x: auto; /* 가로 스크롤 활성화 */
-    white-space: pre-wrap; /* 줄바꿈 유지 */
-    word-wrap: break-word; /* 긴 단어를 줄바꿈 */
 }
 
 .post-content h2 {
