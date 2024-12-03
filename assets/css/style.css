@@ -124,7 +124,9 @@ header p {
 
     /* 사이드바 스타일 */
     .sidebar {
-        border-bottom: 1px solid #e0e0e0; /* 오른쪽 경계선 */
+        width: 100%; /* 모바일에서 전체 너비 */
+        border-right: none; /* border-right 제거 */
+        border-bottom: 1px solid #e0e0e0; /* 아래쪽 경계선 */
         padding: 2rem; /* 콘텐츠 내부 여백 */
     }
 
@@ -161,7 +163,9 @@ header p {
 
     /* 사이드바 스타일 */
     .sidebar {
-        border-bottom: 1px solid #e0e0e0; /* 오른쪽 경계선 */
+        width: 100%; /* 모바일에서 전체 너비 */
+        border-right: none; /* border-right 제거 */
+        border-bottom: 1px solid #e0e0e0; /* 아래쪽 경계선 */
         padding: 2rem; /* 콘텐츠 내부 여백 */
     }
 
