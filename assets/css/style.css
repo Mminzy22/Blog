@@ -145,6 +145,10 @@ code, pre{
     margin-bottom: 15px;
 }
 
+pre{
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+}
+
 .post-content h2 {
     color: #333;
     margin-bottom: 15px;
