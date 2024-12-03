@@ -41,7 +41,7 @@ header p {
 .layout-container {
     display: flex; /* 플렉스박스를 사용해 가로로 배치 */
     flex-direction: row; /* 기본값으로, 요소를 가로로 배치 */
-    width: 80%; /* 화면 가로의 80% 차지 */
+    width: 90%; /* 화면 가로의 80% 차지 */
     margin: 0 auto; /* 화면 중앙에 배치 */
     max-width: 1200px; /* 최대 너비 제한 */
     min-width: 600px; /* 최소 너비 제한 */
