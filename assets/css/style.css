@@ -57,7 +57,7 @@ header p {
 }
 
 /* 메인 콘텐츠 영역 */
-.main-content, .post-content {
+.main-content {
     max-width: calc(75% - 2rem); /* 사이드바를 제외한 영역 */
     flex-grow: 1; /* 남은 공간을 차지하도록 설정 */
     padding: 2rem; /* 콘텐츠 내부 여백 */
