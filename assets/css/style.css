@@ -47,15 +47,6 @@ header p {
     min-width: 600px; /* 최소 너비 제한 */
 }
 
-/* 작은 화면에 대응 (모바일) */
-@media (max-width: 768px) {
-    .layout-container {
-        flex-direction: column; /* 세로 배치 */
-        width: 100%; /* 모바일에서 전체 너비 */
-        padding: 0 1rem; /* 좌우 여백 */
-    }
-}
-
 /* 메인 콘텐츠 영역 */
 .main-content {
     max-width: calc(75% - 2rem); /* 사이드바를 제외한 영역 */
@@ -123,6 +114,80 @@ header p {
     border-radius: 2px; /* 모서리를 살짝 둥글게 */
 }
 
+/* 태블릿 세로 화면 (768px ~ 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .layout-container {
+        flex-direction: column; /* 세로 배치 */
+        width: 100%; /* 모바일에서 전체 너비 */
+        padding: 0 1rem; /* 좌우 여백 */
+    }
+
+    /* 사이드바 스타일 */
+    .sidebar {
+        border-bottom: 1px solid #e0e0e0; /* 오른쪽 경계선 */
+        padding: 2rem; /* 콘텐츠 내부 여백 */
+    }
+
+    .sidebar-title, .category-title, .list-title {
+        margin-bottom: 1rem;
+    }
+
+    .sidebar ul {
+        list-style-type: none; /* 불릿 제거 */
+        padding: 0;
+    }
+
+    .sidebar li {
+        margin-bottom: 0.5rem; /* 목록 간 간격 */
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .sidebar a:hover {
+        color: #007bff; /* 링크에 마우스를 올렸을 때 색상 변경 */
+    }
+}
+
+/* 모바일 화면 (최대 768px) */
+@media (max-width: 768px) {
+    .layout-container {
+        flex-direction: column; /* 세로 배치 */
+        width: 100%; /* 모바일에서 전체 너비 */
+        padding: 0 1rem; /* 좌우 여백 */
+    }
+
+    /* 사이드바 스타일 */
+    .sidebar {
+        border-bottom: 1px solid #e0e0e0; /* 오른쪽 경계선 */
+        padding: 2rem; /* 콘텐츠 내부 여백 */
+    }
+
+    .sidebar-title, .category-title, .list-title {
+        margin-bottom: 1rem;
+    }
+
+    .sidebar ul {
+        list-style-type: none; /* 불릿 제거 */
+        padding: 0;
+    }
+
+    .sidebar li {
+        margin-bottom: 0.5rem; /* 목록 간 간격 */
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .sidebar a:hover {
+        color: #007bff; /* 링크에 마우스를 올렸을 때 색상 변경 */
+    }
+}
+
 /* 사이드바 스타일 */
 .sidebar {
     width: 20%; /* 사이드바의 너비 */
@@ -151,51 +216,6 @@ header p {
 
 .sidebar a:hover {
     color: #007bff; /* 링크에 마우스를 올렸을 때 색상 변경 */
-}
-
-/* 사이드바 숨기기 (모바일) */
-@media (max-width: 768px) {
-    .sidebar {
-        display: none; /* 기본적으로 숨김 */
-        position: fixed; /* 화면에 고정 */
-        top: 0;
-        left: 0;
-        width: 250px; /* 사이드바 너비 */
-        height: 100%; /* 화면 전체 높이 */
-        background-color: #f4f4f4; /* 사이드바 배경색 */
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* 그림자 */
-        padding: 1rem; /* 내부 여백 */
-        z-index: 1000; /* 다른 요소보다 위에 표시 */
-        transform: translateX(-100%); /* 화면 밖으로 이동 */
-        transition: transform 0.3s ease; /* 애니메이션 효과 */
-    }
-
-    /* 사이드바가 활성화된 상태 */
-    .sidebar.active {
-        display: block; /* 표시 */
-        transform: translateX(0); /* 화면 안으로 들어옴 */
-    }
-
-    /* 사이드바 버튼 (모바일) */
-    .sidebar-toggle {
-        display: block; /* 버튼 보이기 */
-        position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 1100; /* 사이드바보다 위에 표시 */
-        background-color: #333; /* 버튼 배경색 */
-        color: #fff; /* 버튼 텍스트 색상 */
-        border: none;
-        border-radius: 5px;
-        padding: 10px 15px;
-        font-size: 16px;
-        cursor: pointer;
-    }
-}
-
-/* 기본적으로 버튼 숨기기 (데스크탑) */
-.sidebar-toggle {
-    display: none;
 }
 
 /* 포스트 설정 */
