@@ -2,7 +2,7 @@
 title: "박민지 블로그"  # 블로그 제목
 description: "AI 서비스 개발"  # 블로그 설명
 url: "https://mminzy22.github.io"  # 블로그의 기본 URL (루트 도메인)
-baseurl: "/Blog"  # 블로그가 호스팅되는 서브 디렉토리 경로
+baseurl: ""  # 블로그가 호스팅되는 서브 디렉토리 경로
 
 # 작성자 정보
 author:
