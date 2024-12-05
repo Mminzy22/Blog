@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Machine Learning: 데이터 전처리 개념 및 주요 기법 소개"
+title: "Machine Learning: 데이터 전처리 방법"
 date: 2024-12-05
 categories: [Machine Learning] 
 ---
