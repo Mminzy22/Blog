@@ -19,22 +19,24 @@
 ```
 .
 ├── _posts/              # 블로그 글이 저장되는 폴더 (Markdown 파일 형식)
-│   ├── Bootcamp/        # 부트캠프와 관련된 학습 내용이나 프로젝트 게시글을 저장
-│   ├── Python/          # Python과 관련된 게시글 (예: 학습 기록, 프로젝트, 팁 등)을 저장
-│   └── SQL/             # SQL 관련 게시글을 저장 (예: 데이터베이스 학습, 쿼리 팁 등)
+│   ├── Bootcamp/
+│   ├── Machine-Learning/
+│   ├── Python/
+│   └── SQL/
 ├── _layouts/            # 블로그의 레이아웃 템플릿을 저장하는 폴더
 │   ├── default.html     # 블로그의 기본 레이아웃 파일 (공통적으로 사용되는 레이아웃 구조 정의)
-│   ├── category.html    # 각 카테고리 페이지의 레이아웃 파일
-│   ├── home.html        # 블로그 메인 페이지의 레이아웃 파일
-│   └── post.html        # 개별 게시글에 적용되는 레이아웃 파일
+│   ├── category.html
+│   ├── home.html
+│   └── post.html
 ├── assets/              # 이미지, CSS, JS 등 정적 파일을 저장하는 폴더
 │   ├── css/             # CSS 파일 저장 (스타일시트)
 │   ├── images/          # 블로그에 사용되는 이미지 파일 저장
 │   └── js/              # JavaScript 파일 저장 (동적 기능 추가)
 ├── category/            # 각 카테고리 페이지를 정의하는 HTML 파일 저장
-│   ├── bootcamp.html    # 부트캠프 관련 게시글을 보여주는 카테고리 페이지
-│   ├── python.html      # Python 관련 게시글을 보여주는 카테고리 페이지
-│   └── sql.html         # SQL 관련 게시글을 보여주는 카테고리 페이지
+│   ├── bootcamp.html
+│   ├── machine-learning.html
+│   ├── python.html
+│   └── sql.html
 ├── _config.yml          # Jekyll 설정 파일 (사이트 제목, URL, 플러그인 등 전반적인 설정 관리)
 ├── index.html           # 블로그 메인 페이지 (홈 화면 구조 정의)
 ├── Gemfile              # Jekyll 및 관련 종속성을 관리하는 파일 (Ruby 환경에서 사용)
