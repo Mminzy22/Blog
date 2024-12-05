@@ -176,8 +176,7 @@ p {
 }
 
 /* 목록 스타일 */
-ul, 
-ol {
+ul, ol {
     padding-left: 20px;
     margin-bottom: 15px;
     font-size: 14px;
