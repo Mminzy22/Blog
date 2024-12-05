@@ -4,43 +4,19 @@ layout: default  # 기본 레이아웃으로 설정 (default 레이아웃 사용
     
 <div class="container">
   <section class="post-list">
-    <h1 class="category-title">{{ page.title }}</h1>
+    <h1 class="category-title">{{ page.title }}</h1> 
     <!-- 현재 페이지의 제목 출력 (예: SQL, Python 등 카테고리 이름) -->
 
     <ul>
-      {% for post in paginator.posts %}
-      <!-- 페이징된 포스트 출력 -->
+      {% for post in site.categories[page.category] %} 
+      <!-- 현재 페이지와 연결된 카테고리의 모든 포스트를 반복문으로 출력 -->
         <li>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          - {{ post.date | date: "%Y-%m-%d" }}
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> 
+          <!-- 각 포스트의 제목과 상대 URL 출력 -->
+          - {{ post.date | date: "%Y-%m-%d" }} 
+          <!-- 포스트 작성 날짜를 YYYY-MM-DD 형식으로 출력 -->
         </li>
       {% endfor %}
     </ul>
-
-    <!-- 페이지 네비게이션 -->
-    <div class="pagination">
-      <!-- 이전 페이지 -->
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&lt;</a>
-      {% else %}
-      <span class="disabled">&lt;</span>
-      {% endif %}
-
-      <!-- 페이지 번호 -->
-      {% for page in (1..paginator.total_pages) %}
-        {% if page == paginator.page %}
-        <span class="current">{{ page }}</span>
-        {% else %}
-        <a href="{{ paginator.page_path | prepend: site.baseurl }}">{{ page }}</a>
-        {% endif %}
-      {% endfor %}
-
-      <!-- 다음 페이지 -->
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">&gt;</a>
-      {% else %}
-      <span class="disabled">&gt;</span>
-      {% endif %}
-    </div>
   </section>
 </div>
