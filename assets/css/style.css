@@ -239,27 +239,11 @@ table tr:hover {
 blockquote {
     font-style: italic; /* 글꼴을 기울임체로 설정 */
     color: #555; /* 글자 색상을 회색 계열로 설정 */
-    border-left: 4px solid #007BFF; /* 왼쪽에 강조선을 추가 */
+    border-left: 4px solid #555; /* 왼쪽에 강조선을 추가 */
     margin: 1em 0; /* 위아래 여백 설정 */
     padding: 0.5em 1em; /* 안쪽 여백 설정 */
     background-color: #f9f9f9; /* 배경 색상을 옅은 회색으로 설정 */
     border-radius: 5px; /* 모서리를 둥글게 설정 */
-}
-
-blockquote::before {
-    content: "“"; /* 왼쪽 큰 따옴표 추가 */
-    font-size: 2em; /* 큰 따옴표 크기 설정 */
-    color: #007BFF; /* 따옴표 색상 설정 */
-    margin-right: 0.2em; /* 따옴표와 텍스트 간격 설정 */
-    vertical-align: -0.4em; /* 따옴표 정렬 */
-}
-
-blockquote::after {
-    content: "”"; /* 오른쪽 큰 따옴표 추가 */
-    font-size: 2em; /* 큰 따옴표 크기 설정 */
-    color: #007BFF; /* 따옴표 색상 설정 */
-    margin-left: 0.2em; /* 따옴표와 텍스트 간격 설정 */
-    vertical-align: -0.4em; /* 따옴표 정렬 */
 }
 
 /* 이미지 기본 스타일 */
