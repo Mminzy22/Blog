@@ -1,49 +1,39 @@
 ---
-layout: default
-pagination:
-  enabled: true
-  category: {{ page.category }}
+layout: default  # 기본 레이아웃으로 설정 (default 레이아웃 사용)
 ---
 
 <div class="container">
   <section class="post-list">
     <h1 class="category-title">{{ page.title }}</h1>
-    <!-- 현재 페이지의 제목 출력 (예: SQL, Python 등 카테고리 이름) -->
+    <!-- 현재 페이지의 제목 출력 -->
 
     <ul>
       {% for post in paginator.posts %}
-      <!-- 페이징된 포스트 출력 -->
         <li>
           <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           - {{ post.date | date: "%Y-%m-%d" }}
         </li>
       {% endfor %}
     </ul>
-
+    
     <!-- 페이지 네비게이션 -->
     <div class="pagination">
-      <!-- 이전 페이지 -->
       {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&lt;</a>
-      {% else %}
-      <span class="disabled">&lt;</span>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&laquo; 이전</a>
       {% endif %}
-
-      <!-- 페이지 번호 -->
+    
       {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
-        <span class="current">{{ page }}</span>
+          <span class="current">{{ page }}</span>
         {% else %}
-        <a href="{{ paginator.page_path | prepend: site.baseurl }}">{{ page }}</a>
+          <a href="{{ paginator.page_path | prepend: site.baseurl }}">{{ page }}</a>
         {% endif %}
       {% endfor %}
-
-      <!-- 다음 페이지 -->
+    
       {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">&gt;</a>
-      {% else %}
-      <span class="disabled">&gt;</span>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}">다음 &raquo;</a>
       {% endif %}
     </div>
+    
   </section>
 </div>
