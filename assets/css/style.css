@@ -239,7 +239,7 @@ table tr:hover {
 blockquote {
     font-style: italic; /* 글꼴을 기울임체로 설정 */
     color: #555; /* 글자 색상을 회색 계열로 설정 */
-    border-left: 4px solid #555; /* 왼쪽에 강조선을 추가 */
+    border-left: 4px solid #909090; /* 왼쪽에 강조선을 추가 */
     margin: 1em 0; /* 위아래 여백 설정 */
     padding: 0.5em 1em; /* 안쪽 여백 설정 */
     background-color: #f9f9f9; /* 배경 색상을 옅은 회색으로 설정 */
