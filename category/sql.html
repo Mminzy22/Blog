@@ -5,27 +5,3 @@ category: "SQL"  # 이 페이지와 연결된 카테고리
 permalink: /category/sql/  # 이 페이지의 URL 경로 설정
 ---
 
-<header>
-    <h1><a href="{{ site.baseurl }}">Minji's Data Journal</a></h1> 
-    <!-- 블로그 제목을 메인 페이지 링크와 함께 출력 -->
-    <p>{{ site.description }}</p> 
-    <!-- 블로그의 설명 출력 (_config.yml에서 정의한 description) -->
-</header>
-
-<div class="container">
-    <section>
-        <h2>{{ page.title }}</h2> 
-        <!-- 현재 페이지 제목 (SQL) 출력 -->
-        <ul>
-            {% for post in site.categories[page.category] %} 
-            <!-- 현재 페이지와 연결된 카테고리('SQL')의 모든 포스트를 반복문으로 출력 -->
-                <li>
-                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a> 
-                    <!-- 각 포스트의 제목과 절대 URL 출력 -->
-                    - {{ post.date | date: "%Y-%m-%d" }} 
-                    <!-- 포스트 작성 날짜를 YYYY-MM-DD 형식으로 출력 -->
-                </li>
-            {% endfor %}
-        </ul>
-    </section>
-</div>
