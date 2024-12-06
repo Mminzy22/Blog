@@ -15,20 +15,6 @@
     <!-- Highlight.js JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
-    <!-- 스타일 정의 -->
-    <style>
-        /* 인라인 코드블럭 (별도 테마) */
-        code {
-            font-family: 'Consolas', monospace;
-            font-size: 0.9em;
-            background-color: #f5f5f5; /* 밝은 배경 */
-            color: #333; /* 어두운 텍스트 색 */
-            border-radius: 4px;
-            padding: 0.2em 0.4em;
-            border: 1px solid #ddd; /* 얇은 테두리 */
-        }
-    </style>
-
     <!-- 하이라이트 활성화 -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -53,7 +39,7 @@
     </script>
 
     <!-- CSS 파일 연결 (_config.yml의 baseurl을 사용하여 상대 경로 처리) -->
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
 
