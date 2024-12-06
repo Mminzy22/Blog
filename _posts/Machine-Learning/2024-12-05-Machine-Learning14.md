@@ -78,7 +78,7 @@ print("Q-Table after initialization:", Q)
 - **REINFORCE:**  
   확률적 정책을 사용하는 정책 경사 하강법 알고리즘.  
   $$ \theta = \theta + \alpha \nabla_\theta \log \pi_\theta (a \| s) R $$  
-  - \\( \pi_\theta(a | s) \\): 상태 \\( s \\)에서 행동 \\( a \\)를 선택할 확률.
+  - \\( \pi_\theta(a \| s) \\): 상태 \\( s \\)에서 행동 \\( a \\)를 선택할 확률.
 
 **정책 기반 학습의 장점**
 - 연속적인 행동 공간에서도 적용 가능.
