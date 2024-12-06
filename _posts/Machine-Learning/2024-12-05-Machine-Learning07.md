@@ -62,7 +62,7 @@ print(f"Intercept: {model.intercept_}, Coefficients: {model.coef_}")
   입력 변수와 출력 변수 간의 관계를 모델링하여 특정 사건이 발생할 확률을 예측.  
 - **수식:**  
   $$ P(y=1|X) = \frac{1}{1 + e^{-(\beta_0 + \beta_1X)}} $$  
-  - \\( P(y=1|X) \\): 사건이 발생할 확률  
+  - \\( P(y=1\|X) \\): 사건이 발생할 확률  
   - \\( e \\): 자연 상수  
   - \\( \beta_0, \beta_1 \\): 모델 파라미터  
 
