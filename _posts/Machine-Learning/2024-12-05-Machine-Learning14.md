@@ -44,9 +44,9 @@ categories: [Machine Learning]
 - **Q-Learning:**  
   상태-행동 쌍(State-Action Pair)에 대해 기대 보상을 학습합니다.  
   $$ Q(s, a) = Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right] $$  
-  - \( Q(s, a) \): 상태 \( s \)에서 행동 \( a \)를 선택했을 때의 기대 보상.  
-  - \( \alpha \): 학습률.  
-  - \( \gamma \): 할인율.  
+  - \\( Q(s, a) \\): 상태 \\( s \\)에서 행동 \\( a \\)를 선택했을 때의 기대 보상.  
+  - \\( \alpha \\): 학습률.  
+  - \\( \gamma \\): 할인율.  
 
 **Q-Learning 구현 예제**
 ```python
@@ -77,8 +77,8 @@ print("Q-Table after initialization:", Q)
 
 - **REINFORCE:**  
   확률적 정책을 사용하는 정책 경사 하강법 알고리즘.  
-  $$ \theta = \theta + \alpha \nabla_\theta \log \pi_\theta (a | s) R $$  
-  - \( \pi_\theta(a | s) \): 상태 \( s \)에서 행동 \( a \)를 선택할 확률.
+  $$ \theta = \theta + \alpha \nabla_\theta \log \pi_\theta (a \| s) R $$  
+  - \\( \pi_\theta(a | s) \\): 상태 \\( s \\)에서 행동 \\( a \\)를 선택할 확률.
 
 **정책 기반 학습의 장점**
 - 연속적인 행동 공간에서도 적용 가능.
