@@ -53,7 +53,7 @@ DQN의 개선된 버전으로, Q-값의 과대추정을 방지합니다.
 
 - **기본 아이디어:**  
   Q-값 업데이트 시 행동 선택과 Q-값 평가를 분리.  
-  $$ Q(s, a) = r + \gamma Q(s', \text{argmax}_{a'} Q(s', a'; \theta); \theta'}) $$  
+  $$ Q(s, a) = r + \gamma Q(s', \text{argmax}_{a'} Q(s', a'; \theta), \theta') $$  
 - **장점:**  
   안정적인 학습과 더 나은 성능.
 
