@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko"> <!-- HTML 언어 설정: 한국어 -->
 <head>
-    <meta charset="UTF-8"> <!-- 문서의 문자 인코딩 설정 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 반응형 웹을 위한 뷰포트 설정 -->
-    <meta name="robots" content="index, follow">
-    <meta name="description" content="MINJI BLOG는 SQL, Python, 부트캠프 등의 주제를 다룹니다.">
-    <meta name="keywords" content="GitHub, 블로그, 파이썬, SQL">
-    <meta name="author" content="박민지">
+    {% include meta.html %}
     <title>{{ page.title }} | MINJI BLOG</title> 
     <!-- 현재 페이지 제목과 블로그 이름을 결합하여 페이지 제목 설정 -->
 
@@ -16,13 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
     <!-- 하이라이트 활성화 -->
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll("pre code").forEach((block) => {
-                hljs.highlightElement(block); // 블록 코드블럭에 하이라이트 적용
-            });
-        });
-    </script>
+    
     <!-- KaTeX를 사용한 LaTeX 수식 렌더링 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.js"></script>
@@ -44,14 +33,7 @@
 </head>
 <body>
 
-<header>
-    <!-- 헤더 섹션 -->
-    <h1><a href="{{ site.url }}{{ site.baseurl }}">MINJI BLOG</a></h1>
-    <!-- 블로그 제목을 홈 링크와 함께 표시 -->
-    <p>{{ site.description }}</p>
-    <!-- 블로그 설명 출력 (_config.yml에서 정의한 description) -->
-</header>
-
+{% include header.html %}
 
 <div class="layout-container">
     <!-- 사이드바 -->
@@ -73,19 +55,10 @@
     </main>
 </div>
 
-<footer>
-    <!-- 푸터 섹션 -->
-    <p>&copy; {{ site.author.name }} | Contact: <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>
-    <!-- 저작권 정보와 작성자의 이메일 표시 -->
-    <p>
-        Visit my GitHub: 
-        <a href="https://github.com/Mminzy22" target="_blank">Mminzy22</a>
-    </p>
-    <!-- 깃허브 주소 표시 -->
-</footer>
+{% include footer.html %}
 
 <!-- JavaScript 파일 연결 -->
-<!-- <script src="{{ "/assets/js/script.js" | prepend: site.baseurl }}" defer></script> -->
+<script src="{{ "/assets/js/script.js" | prepend: site.baseurl }}" defer></script>
 
 </body>
 </html>

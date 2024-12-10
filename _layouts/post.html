@@ -4,36 +4,10 @@ layout: default
 
 <h3 class="post-title">{{ page.title }}</h3>
 <hr class="post-divider"> <!-- 제목 밑에 줄 추가 -->
-
-<div id="markdown-toc">
-  <ul>
-    {% for item in site.toc %}
-      {% if item.level <= 3 %}
-        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</div>
-
+{% include toc.html html=content h_min=2 h_max=3 %}
+<hr class="post-divider"> <!-- 목차 밑에 줄 추가 -->
 
 {{ content }}
 <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
 
-<!-- 댓글 섹션 -->
-<div id="giscus-comments" style="margin-top: 2rem;">
-  <script src="https://giscus.app/client.js"
-      data-repo="Mminzy22/mminzy22.github.io"
-      data-repo-id="R_kgDONQ8kQw"
-      data-category="General"
-      data-category-id="DIC_kwDONQ8kQ84CkXD-"
-      data-mapping="pathname"
-      data-strict="0"
-      data-reactions-enabled="1"
-      data-emit-metadata="0"
-      data-input-position="top"
-      data-theme="preferred_color_scheme"
-      data-lang="ko"
-      crossorigin="anonymous"
-      async>
-  </script>
-</div>
+{% include comments.html %}
