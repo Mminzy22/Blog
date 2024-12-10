@@ -360,6 +360,7 @@ plt.show()
 
 1. **모델 생성**
    - 사이킷런의 `KNeighborsClassifier` 클래스를 사용합니다.
+   
    ```python
    from sklearn.neighbors import KNeighborsClassifier
 
