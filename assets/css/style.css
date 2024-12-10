@@ -170,6 +170,30 @@ code {
     border: 1px solid #ddd; /* 얇은 테두리 */
 }
 
+/* 목차 전체 스타일 */
+.toc {
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.toc li {
+    margin-bottom: 10px;
+}
+
+/* 목차 링크 스타일 */
+.toc a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #0078D7; /* 링크 색상 */
+    font-weight: bold;
+    transition: color 0.3s ease; /* 호버 효과 */
+}
+
+.toc a:hover {
+    color: #0056a3; /* 호버 시 색상 변경 */
+}
+
 h2 {
     color: #333;
     margin-bottom: 15px;
