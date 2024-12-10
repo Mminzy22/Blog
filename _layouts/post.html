@@ -1,41 +1,44 @@
 ---
-layout: default  # 기본 레이아웃으로 설정 (default 레이아웃 사용)
+layout: default
 ---
 
 <h3 class="post-title">{{ page.title }}</h3>
 <hr class="post-divider"> <!-- 제목 밑에 줄 추가 -->
+
+<!-- 목차 섹션 -->
 <nav>
-    <!-- 자동으로 생성된 목차 -->
-    <ul class="toc">
-        {% assign headings = page.content | split: '\n' | where_exp: "line", "line contains '<h'" %}
-        {% for line in headings %}
-        {% capture heading_level %}{{ line | slice: 2, 1 }}{% endcapture %}
-        {% capture heading_text %}{{ line | remove: '<h' | remove: '</h' | remove: '>' | strip_html | strip_newlines }}{% endcapture %}
-        {% capture heading_id %}{{ heading_text | slugify }}{% endcapture %}
-        <li class="toc-level-{{ heading_level }}">
-            <a href="#{{ heading_id }}">{{ heading_text }}</a>
-        </li>
-        {% endfor %}
-    </ul>
+  <h4>목차</h4>
+  <ul class="toc">
+    {% assign headings = page.content | split: '\n' | where_exp: "line", "line contains '<h'" %}
+    {% for line in headings %}
+      {% capture heading_level %}{{ line | slice: 2, 1 }}{% endcapture %}
+      {% capture heading_text %}{{ line | remove: '<h' | remove: '</h' | remove: '>' | strip_html | strip_newlines }}{% endcapture %}
+      {% capture heading_id %}{{ heading_text | slugify }}{% endcapture %}
+      <li class="toc-level-{{ heading_level }}">
+        <a href="#{{ heading_id }}">{{ heading_text }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </nav>
-{{ content }} 
+
+{{ content }}
 <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
-<!-- 댓글 섹션 시작 -->
+
+<!-- 댓글 섹션 -->
 <div id="giscus-comments" style="margin-top: 2rem;">
-    <!-- Giscus 스크립트를 복사하여 아래에 삽입 -->
-    <script src="https://giscus.app/client.js"
-        data-repo="Mminzy22/mminzy22.github.io"
-        data-repo-id="R_kgDONQ8kQw"
-        data-category="General"
-        data-category-id="DIC_kwDONQ8kQ84CkXD-"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="ko"
-        crossorigin="anonymous"
-        async>
-    </script>
+  <script src="https://giscus.app/client.js"
+      data-repo="Mminzy22/mminzy22.github.io"
+      data-repo-id="R_kgDONQ8kQw"
+      data-category="General"
+      data-category-id="DIC_kwDONQ8kQ84CkXD-"
+      data-mapping="pathname"
+      data-strict="0"
+      data-reactions-enabled="1"
+      data-emit-metadata="0"
+      data-input-position="top"
+      data-theme="preferred_color_scheme"
+      data-lang="ko"
+      crossorigin="anonymous"
+      async>
+  </script>
 </div>
