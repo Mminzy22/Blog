@@ -360,7 +360,7 @@ plt.show()
 
 1. **모델 생성**
    - 사이킷런의 `KNeighborsClassifier` 클래스를 사용합니다.
-   
+
    ```python
    from sklearn.neighbors import KNeighborsClassifier
 
@@ -377,6 +377,7 @@ plt.show()
 
 3. **모델 평가**
    - 표준화된 테스트 데이터(`test_scaled`)를 사용하여 성능을 평가합니다.
+   
    ```python
    # 테스트 세트 평가
    test_scaled = (test_input - mean) / std
