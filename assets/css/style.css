@@ -171,21 +171,21 @@ code {
 }
 
 /* 목차 전체 스타일 */
-.toc-list {
+#markdown-toc {
     font-size: 14px;
     line-height: 1.5;
 }
 
-.toc-list ul {
+#markdown-toc ul {
     margin-left: 20px;
 }
 
-.toc-list a {
+#markdown-toc a {
     text-decoration: none;
     color: #007bff;
 }
 
-.toc-list a:hover {
+#markdown-toc a:hover {
     text-decoration: underline;
 }
 

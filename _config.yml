@@ -19,10 +19,8 @@ plugins:
 
 # TOC 설정
 toc:
-  min_level: 2        # 최소 제목 레벨 (예: h2부터 포함)
-  max_level: 3        # 최대 제목 레벨 (예: h3까지만 포함)
-  no_toc_section_class: "no-toc" # 특정 섹션 제외하려면 클래스 이름 설정
-  list_class: "toc-list" # 목차에 적용할 클래스 이름
+  min_level: 2   # 최소 제목 레벨: h2
+  max_level: 3   # 최대 제목 레벨: h3
 
 # jekyll-archives 설정
 jekyll-archives:
