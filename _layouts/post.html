@@ -5,6 +5,17 @@ layout: default
 <h3 class="post-title">{{ page.title }}</h3>
 <hr class="post-divider"> <!-- 제목 밑에 줄 추가 -->
 
+<div id="markdown-toc">
+  <ul>
+    {% for item in site.toc %}
+      {% if item.level <= 3 %}
+        <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+
+
 {{ content }}
 <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
 
