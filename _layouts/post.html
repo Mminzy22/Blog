@@ -4,7 +4,20 @@ layout: default  # 기본 레이아웃으로 설정 (default 레이아웃 사용
 
 <h3 class="post-title">{{ page.title }}</h3>
 <hr class="post-divider"> <!-- 제목 밑에 줄 추가 -->
-
+<nav>
+    <!-- 자동으로 생성된 목차 -->
+    <ul class="toc">
+        {% assign headings = page.content | split: '\n' | where_exp: "line", "line contains '<h'" %}
+        {% for line in headings %}
+        {% capture heading_level %}{{ line | slice: 2, 1 }}{% endcapture %}
+        {% capture heading_text %}{{ line | remove: '<h' | remove: '</h' | remove: '>' | strip_html | strip_newlines }}{% endcapture %}
+        {% capture heading_id %}{{ heading_text | slugify }}{% endcapture %}
+        <li class="toc-level-{{ heading_level }}">
+            <a href="#{{ heading_id }}">{{ heading_text }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
 {{ content }} 
 <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
 <!-- 댓글 섹션 시작 -->

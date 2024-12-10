@@ -172,26 +172,34 @@ code {
 
 /* 목차 전체 스타일 */
 .toc {
-    font-family: Arial, sans-serif;
-    margin: 20px 0;
-    padding: 0;
     list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
 }
 
 .toc li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
-/* 목차 링크 스타일 */
-.toc a {
-    text-decoration: none; /* 밑줄 제거 */
-    color: #0078D7; /* 링크 색상 */
+.toc-level-1 {
     font-weight: bold;
-    transition: color 0.3s ease; /* 호버 효과 */
+}
+
+.toc-level-2 {
+    margin-left: 20px;
+}
+
+.toc-level-3 {
+    margin-left: 40px;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #0078D7;
 }
 
 .toc a:hover {
-    color: #0056a3; /* 호버 시 색상 변경 */
+    color: #0056a3;
 }
 
 h2 {
