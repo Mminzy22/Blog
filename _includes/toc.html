@@ -106,6 +106,10 @@
             {% continue %}
         {% endif %}
 
+        {% if _workspace[0] contains "<pre>" or _workspace[0] contains "<code>" %}
+            {% continue %}
+        {% endif %}
+
         {% if firstHeader %}
             {% assign minHeader = currLevel %}
         {% endif %}
