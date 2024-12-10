@@ -11,6 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
 
     <!-- 하이라이트 활성화 -->
+    <script>hljs.highlightAll();</script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll("pre code, code").forEach((block) => {
+                hljs.highlightElement(block);
+            });
+        });
+    </script>
     
     <!-- KaTeX를 사용한 LaTeX 수식 렌더링 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.4/katex.min.css">
