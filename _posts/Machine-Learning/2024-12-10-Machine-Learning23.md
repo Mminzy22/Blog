@@ -679,7 +679,6 @@ plt.show()
   - \\(k\\)-최근접 이웃 알고리즘은 회귀 문제를 해결할 때, 주어진 샘플의 가장 가까운 \\(k\\)개의 이웃 타깃값의 **평균**을 사용하여 예측합니다.
   - \\(k\\) 값은 모델의 복잡도를 결정하며, 적절한 값을 찾는 것이 중요합니다.
 
----
 
 #### **9.2 결정계수 (\\(R^2\\))의 의미와 중요성**
 
@@ -694,7 +693,6 @@ plt.show()
 - **활용**:
   - \\(R^2\\)는 테스트 세트 성능을 평가하여 모델이 새로운 데이터에 대해 얼마나 잘 일반화되었는지 확인하는 데 유용합니다.
 
----
 
 #### **9.3 과대적합과 과소적합의 구분 및 해결 방안**
 
@@ -711,7 +709,6 @@ plt.show()
     2. 충분한 학습 시간 제공.
     3. 추가 특성을 생성하거나 데이터 전처리 개선.
 
----
 
 ### **요약된 학습 흐름**
 
@@ -758,7 +755,6 @@ score = knr.score(test_input, test_target)  # 모델 평가
 ```
 
 
-
 - **`train_test_split`**:
   - 데이터를 훈련 세트와 테스트 세트로 랜덤하게 분리하는 함수.
   - **주요 매개변수**:
@@ -775,7 +771,6 @@ train_input, test_input, train_target, test_target = train_test_split(
 ```
 
 
-
 - **`mean_absolute_error`**:
   - 평균 절댓값 오차(MAE)를 계산하는 함수로, 모델의 예측 오차를 측정.
   - **매개변수**:
@@ -789,7 +784,6 @@ from sklearn.metrics import mean_absolute_error
 mae = mean_absolute_error(test_target, knr.predict(test_input))
 print("평균 절댓값 오차(MAE):", mae)
 ```
-
 
 
 #### **10.2 numpy의 `reshape()` 메서드와 활용법**
@@ -815,7 +809,6 @@ print(reshaped_arr)
  [3]
  [4]]
 ```
-
 
 
 #### **10.3 matplotlib를 활용한 데이터 시각화**
