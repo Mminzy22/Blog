@@ -301,6 +301,8 @@ plt.title("Bream and Smelt with New Sample")
 plt.show()
 ```
 
+![결과 산점도3]({{ site.baseurl }}/assets/images/2024-12-06_산점도3.png)
+
 
 ### 💡 추가 팁
 1. **왜 예측이 중요한가?**
