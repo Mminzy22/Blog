@@ -8,6 +8,7 @@ categories: [Machine Learning]
 * TOC
 {:toc}
 
+---
 
 ### **1. 지도 학습의 이해: 분류와 회귀**
 

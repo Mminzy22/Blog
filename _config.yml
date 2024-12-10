@@ -17,23 +17,30 @@ plugins:
   - jekyll-archives   # 카테고리 및 태그별 아카이브를 생성하는 플러그인
   - jekyll-toc
 
+# TOC 설정
+toc:
+  min_level: 2        # 최소 제목 레벨 (예: h2부터 포함)
+  max_level: 3        # 최대 제목 레벨 (예: h3까지만 포함)
+  no_toc_section_class: "no-toc" # 특정 섹션 제외하려면 클래스 이름 설정
+  list_class: "toc-list" # 목차에 적용할 클래스 이름
+
 # jekyll-archives 설정
 jekyll-archives:
   enabled:
-    - categories  # 카테고리별 아카이브 생성을 활성화
+    - categories      # 카테고리별 아카이브 생성을 활성화
   layouts:
     category: category  # 카테고리별 아카이브에 사용할 레이아웃 파일 지정
   permalinks:
     category: /category/:name/  # 카테고리 아카이브의 URL 구조 지정
 
 # 페이지네이션 설정
-paginate: 8 # 한 페이지에 표시할 포스트 수
+paginate: 8             # 한 페이지에 표시할 포스트 수
 paginate_path: "/page:num" # 페이징 경로 설정
 
 # CSS 추가 설정
 sass:
-  style: expanded  # SASS 컴파일 스타일을 사람이 읽기 쉬운 expanded 형식으로 설정
+  style: expanded       # SASS 컴파일 스타일을 사람이 읽기 쉬운 expanded 형식으로 설정
 
 # 빌드에서 제외할 파일
 exclude:
-  - README.md  # Jekyll 빌드 과정에서 제외할 파일 목록 (README.md 제외)
+  - README.md           # Jekyll 빌드 과정에서 제외할 파일 목록 (README.md 제외)
