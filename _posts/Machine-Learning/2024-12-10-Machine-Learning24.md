@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Machine Learning 24:"
+title: "Machine Learning 24: 머신러닝 모델 평가: 선형 회귀와 다항 회귀 실습"
 date: 2024-12-10
 categories: [Machine Learning]
 ---
