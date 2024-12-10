@@ -153,32 +153,11 @@ header p {
     margin-bottom: 15px; /* 코드 블록 아래 간격 */
 }
 
-
 /* 코드 내부 스타일링 */
 .highlight pre {
     max-width: 100%; /* 부모 요소 크기에 맞춤 */
     overflow-x: auto; /* 가로 스크롤 활성화 */
-    scrollbar-width: thin; /* 모질라 브라우저에서 얇은 스크롤 사용 */
-    scrollbar-color: #61dafb #282c34; /* 스크롤 색상 */
 }
-
-/* 스크롤바 커스터마이징 (크롬, 엣지, 사파리) */
-pre::-webkit-scrollbar {
-    height: 8px; /* 스크롤바 높이 */
-    background-color: #1c2025; /* 스크롤바 배경 */
-    border-radius: 4px; /* 스크롤바 모서리 */
-}
-
-pre::-webkit-scrollbar-thumb {
-    background-color: #61dafb; /* 스크롤바 핸들 색상 */
-    border-radius: 4px; /* 핸들 모서리 */
-    border: 2px solid #1c2025; /* 핸들 외곽선 */
-}
-
-pre::-webkit-scrollbar-thumb:hover {
-    background-color: #21a1f1; /* 핸들 호버 색상 */
-}
-
 
 /* 인라인 코드블럭 (별도 테마) */
 code {
