@@ -189,6 +189,11 @@ code {
     text-decoration: underline;
 }
 
+/* 목차에서 h4 이하의 항목 숨기기 */
+#markdown-toc ul ul ul {
+    display: none;
+}
+
 
 h2 {
     color: #333;
