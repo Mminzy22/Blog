@@ -130,7 +130,7 @@ print("0이 된 가중치 수:", np.sum(lasso.coef_ == 0))
 
 ### **5. 릿지 vs 라쏘 비교**
 
-릿지와 라쏘를 다양한 규제 강도(\(\alpha\))로 비교해 봅시다.
+릿지와 라쏘를 다양한 규제 강도(\\(\alpha\\))로 비교해 봅시다.
 
 ```python
 import matplotlib.pyplot as plt
