@@ -7,19 +7,20 @@ layout: default
 
 <!-- 목차 섹션 -->
 <nav>
-  <h4>목차</h4>
-  <ul class="toc">
-    {% assign headings = page.content | split: '\n' | where_exp: "line", "line contains '<h'" %}
-    {% for line in headings %}
-      {% capture heading_level %}{{ line | slice: 2, 1 }}{% endcapture %}
-      {% capture heading_text %}{{ line | remove: '<h' | remove: '</h' | remove: '>' | strip_html | strip_newlines }}{% endcapture %}
-      {% capture heading_id %}{{ heading_text | slugify }}{% endcapture %}
-      <li class="toc-level-{{ heading_level }}">
-        <a href="#{{ heading_id }}">{{ heading_text }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</nav>
+    <h4>목차</h4>
+    <ul class="toc">
+      {% for heading in page.content | markdownify | split: '\n' %}
+        {% if heading contains '<h' %}
+          {% assign heading_level = heading | slice: 2, 1 %}
+          {% assign heading_text = heading | strip_html | strip_newlines %}
+          {% assign heading_id = heading_text | slugify %}
+          <li class="toc-level-{{ heading_level }}">
+            <a href="#{{ heading_id }}">{{ heading_text }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
 
 {{ content }}
 <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
