@@ -23,6 +23,11 @@
 │   ├── Machine-Learning/
 │   ├── Python/
 │   └── SQL/
+├── _includes/           # 사이트 공통 요소 (재사용 가능한 HTML 조각)
+│   ├── comments.html/
+│   ├── footer.html/
+│   ├── header.html/
+│   └── meta.html/
 ├── _layouts/            # 블로그의 레이아웃 템플릿을 저장하는 폴더
 │   ├── default.html     # 블로그의 기본 레이아웃 파일 (공통적으로 사용되는 레이아웃 구조 정의)
 │   ├── category.html
