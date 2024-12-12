@@ -22,6 +22,7 @@ wine = pd.read_csv('https://bit.ly/wine_csv_data')
 wine.head()
 ```
 출력:
+
 |  | alcohol | sugar | pH   | class |
 |---|---------|-------|------|-------|
 | 0 | 9.4     | 1.9   | 3.51 | 0.0   |
@@ -59,6 +60,7 @@ memory usage: 203.2 KB
 wine.describe()
 ```
 출력:
+
 |        | alcohol  | sugar    | pH     | class  |
 |--------|----------|----------|--------|--------|
 | count  | 6497.000 | 6497.000 | 6497.000 | 6497.000 |
