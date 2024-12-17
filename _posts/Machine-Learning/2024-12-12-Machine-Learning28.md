@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 28: 결정 트리와 로지스틱 회귀를 활용한 와인 분류"
 date: 2024-12-12
 categories: [Machine Learning]
+tags: [결정 트리, 로지스틱 회귀, 와인 분류, 머신러닝, 데이터 분석, 과대적합, 특성 중요도, 파이썬, 시각화]
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 22: 데이터 전처리와 K-최근접 이웃 알고리즘 실습"
 date: 2024-12-09
 categories: [Machine Learning]
+tags: [KNN 분류, 데이터 전처리, 머신러닝, 데이터 시각화, 도미와 빙어 분류, 표준점수, 데이터 분리, 파이썬, 과대적합, scikit-learn]
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 24: 머신러닝 모델 평가: 선형 회귀와 다항 회귀 실습"
 date: 2024-12-10
 categories: [Machine Learning]
+tags: [KNN 회귀, 선형 회귀, 다항 회귀, 머신러닝, 회귀 모델, 데이터 분석, 시각화, 과적합, 파이썬]
 ---
 
 

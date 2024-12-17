@@ -2,7 +2,8 @@
 layout: post
 title: "Machine Learning 21: 도미와 빙어 데이터를 활용한 지도 학습 실습"
 date: 2024-12-09
-categories: [Machine Learning] 
+categories: [Machine Learning]
+tags: [KNN 분류, 지도 학습, 데이터 시각화, 도미와 빙어 분류, 머신러닝, 데이터 전처리, 모델 평가, 파이썬, scikit-learn, 특성 스케일 조정]
 ---
 
 1. [데이터 준비 및 시각화](#1-데이터-준비-및-시각화)

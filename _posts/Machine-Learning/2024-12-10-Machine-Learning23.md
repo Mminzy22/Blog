@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 23: k-최근접 이웃 회귀와 머신러닝 데이터 준비 과정"
 date: 2024-12-10
 categories: [Machine Learning]
+tags: [KNN 회귀, 머신러닝, 회귀 문제, 데이터 시각화, 과대적합, 과소적합, 평균 절댓값 오차, 데이터 전처리, 파이썬]
 ---
 
 1. [지도 학습의 이해: 분류와 회귀](#1-지도-학습의-이해-분류와-회귀)

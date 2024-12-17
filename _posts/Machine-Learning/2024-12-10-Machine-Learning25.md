@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 25: 특성 공학과 규제: 머신러닝 모델의 숨은 비법"
 date: 2024-12-10
 categories: [Machine Learning]
+tags: [특성 공학, 다항식 회귀, 릿지 회귀, 라쏘 회귀, 규제, 머신러닝, 데이터 전처리, 과대적합, 파이썬, 데이터 분석]
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 30: 트리 앙상블 (Tree Ensemble)"
 date: 2024-12-13
 categories: [Machine Learning]
+tags: [트리 앙상블, 랜덤 포레스트, 엑스트라 트리, 그래디언트 부스팅, 히스토그램 기반 그래디언트 부스팅, 머신러닝, 분류 문제, 파이썬, 데이터 분석]
 ---
 
 

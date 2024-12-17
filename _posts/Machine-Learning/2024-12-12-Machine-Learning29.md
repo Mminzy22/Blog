@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 29: 교차 검증과 그리드 서치"
 date: 2024-12-12
 categories: [Machine Learning]
+tags: [교차 검증, 그리드 서치, 랜덤 서치, 하이퍼파라미터 튜닝, 머신러닝, 데이터 검증, 결정 트리, 파이썬, 데이터 분석]
 ---
 
 

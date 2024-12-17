@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 27: 확률적 경사 하강법 (Stochastic Gradient Descent, SGD)"
 date: 2024-12-11
 categories: [Machine Learning]
+tags: [확률적 경사 하강법, SGD, 경사 하강법, 손실 함수, 머신러닝, 데이터 분석, 파이썬, 에포크, 조기 종료]
 ---
 
 

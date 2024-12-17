@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 26: 로지스틱 회귀: 럭키백 확률 계산 및 K-최근접 이웃 분류기"
 date: 2024-12-11
 categories: [Machine Learning]
+tags: [로지스틱 회귀, K-최근접 이웃, KNN, 시그모이드 함수, 소프트맥스 함수, 머신러닝, 분류 문제, 파이썬, 데이터 분석]
 ---
 
 

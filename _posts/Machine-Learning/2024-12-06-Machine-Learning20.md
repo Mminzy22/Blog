@@ -2,7 +2,8 @@
 layout: post
 title: "Machine Learning 20: 도미와 빙어 데이터를 활용한 머신러닝 학습"
 date: 2024-12-06
-categories: [Machine Learning] 
+categories: [Machine Learning]
+tags: [KNN 알고리즘, 데이터 시각화, 도미와 빙어 분류, 머신러닝, 데이터 전처리, 새로운 데이터 예측, 모델 평가, 파이썬, scikit-learn, 산점도]
 ---
 
 

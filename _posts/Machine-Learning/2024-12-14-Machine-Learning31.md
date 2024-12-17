@@ -3,6 +3,7 @@ layout: post
 title: "Machine Learning 31: 비지도 학습과 군집화 알고리즘"
 date: 2024-12-14
 categories: [Machine Learning]
+tags: [군집화, 비지도 학습, 머신러닝, 이미지 처리, 데이터 분석, 파이썬, 넘파이, 맷플롯립]
 ---
 
 
