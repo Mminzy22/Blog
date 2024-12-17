@@ -43,20 +43,8 @@
 {% include header.html %}
 
 <div class="layout-container">
-    <!-- 사이드바 -->
-    <aside class="sidebar">
-        <h3 class="sidebar-title">카테고리</h3>
-        <ul>
-            {% for category in site.categories %}
-            <li>
-                <a href="{{ site.url }}{{ site.baseurl }}/category/{{ category[0] | slugify: }}/">
-                    {{ category[0] | capitalize }}
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-    </aside>
-    <main class="main-content">
+    {% include sidebar.html %}
+    <main class="{% if page.page_layout == 'home' %}home{% elsif page.page_layout == 'post' %}post{% else %}default{% endif %}">
         {{ content }} 
         <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
     </main>
