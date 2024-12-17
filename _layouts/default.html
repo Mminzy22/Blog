@@ -44,7 +44,7 @@
 
 <div class="layout-container">
     {% include sidebar.html %}
-    <main class="{% if page.page_layout == 'home' %}home{% elsif page.page_layout == 'post' %}post{% else %}default{% endif %}">
+    <main class="{% if page_layout == 'home' %}home{% elsif page_layout == 'post' %}post{% else %}default{% endif %}">
         <p>Page Layout: {{ page.page_layout }}</p>
         {{ content }} 
         <!-- 각 페이지의 주요 콘텐츠를 삽입 -->
