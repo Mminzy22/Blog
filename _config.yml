@@ -42,3 +42,12 @@ sass:
 # 빌드에서 제외할 파일
 exclude:
   - README.md           # Jekyll 빌드 과정에서 제외할 파일 목록 (README.md 제외)
+
+# 기본 값 설정
+defaults:
+  - scope:
+      path: ""          # 모든 파일에 적용
+      type: "pages"     # 페이지 파일만 적용
+    values:
+      layout: default   # 기본 레이아웃을 default로 설정
+
