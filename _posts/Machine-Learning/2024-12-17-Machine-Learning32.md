@@ -3,7 +3,7 @@ layout: post
 title: "Machine Learning 32: k-평균 알고리즘을 활용한 과일 사진 자동 군집화"
 date: 2024-12-17
 categories: [Machine Learning]
-tags: tags: [k-평균, k-means, 비지도 학습, 머신러닝, 클러스터링, 사이킷런, Python, 데이터 분석, 이미지 처리, AI, 엘보우 방법, 클러스터 개수, NumPy, Matplotlib]
+tags: [k-평균, k-means, 비지도 학습, 머신러닝, 클러스터링, 사이킷런, Python, 데이터 분석, 이미지 처리, AI, 엘보우 방법, 클러스터 개수, NumPy, Matplotlib]
 ---
 
 
