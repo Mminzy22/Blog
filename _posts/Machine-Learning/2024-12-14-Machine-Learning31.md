@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Machine Learning 31: 흑백 사진 분류를 위한 비지도 학습과 군집 알고리즘 이해하기"
-date: 2024-12-14
+date: 2024-12-16
 categories: [Machine Learning]
 tags: [군집 알고리즘, 비지도 학습, 클러스터링, 머신러닝, 이미지 분석, numpy, matplotlib]
 ---
